@@ -31,21 +31,8 @@ typedef vector<long long> vll;
 typedef vector<string> vs;
 typedef vector<pii> vii;
 typedef vector<vi> vvi;
-typedef map<int,int> mii;
-typedef set<int> si;
-typedef multiset<int> msi;
-
-ll gcd(ll a , ll b){
-	if(a < b) swap(a , b);
-	if(b == 0) return a;
-	return gcd(b , a % b);
-}
 
 
-void solve() {
-
-    
-}
 
 
 
@@ -54,9 +41,20 @@ int main() {
     cin.tie(0); cout.tie(0);
 
    
-    int tc; cin >> tc;
-    fo(i, tc) {
-        solve();
+    ll n; cin>>n; 
+
+    vvi task(n+1); 
+    fo(i, n){
+        ll a, b ,c; 
+        task[i] = {a, b, c};
+    }
+
+    ll max_happiness=0;
+
+    for(int i=n; i>=0; i--){
+        ll happi=0; 
+
+
     }
 
 }
